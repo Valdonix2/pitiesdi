@@ -5,14 +5,14 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 ---====== Create entity ======---
 
 local entity = Spawner.createEntity({
-    CustomName = "Template Entity",
+    CustomName = "Clock",
     Model = "https://github.com/Valdonix2/pitiesdi/raw/main/Clock.rbxm", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 150,
     MoveDelay = 10,
     HeightOffset = 0,
     CanKill = true,
     KillRange = 50,
-    SpawnInFront = true,
+    SpawnInFront = false,
     ShatterLights = false,
     FlickerLights = {
         Enabled = true,
@@ -30,7 +30,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"You died of a heart attack...", "Seems like you were scared to death by Clock", "He can spawn whenever a door is opened. And he appears in the next room infront of you.", "He will give you plenty of time to hide!", "Note that it can come back like ambush does!"},
+    DeathMessage = {"You died of a heart attack...", "Seems like you were scared to death by Clock", "He can spawn whenever a door is opened.", "He will give you plenty of time to hide!", "Note that it can come back like ambush does!"},
     IsCuriousLight = false
 })
 
