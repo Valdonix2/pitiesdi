@@ -6,7 +6,7 @@ if not clocksound.IsLoaded then
 end
 
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-local clock = (math.random(1, 8))
+local clock = (math.random(1, 4))
 print (clock)
 if clock == 1 then
 	clocksound:Play()
